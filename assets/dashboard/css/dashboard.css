@@ -1,0 +1,174 @@
+
+.page-body {
+    padding: 10px;   
+}
+#introduction {
+    background: #fff; 
+    border-radius: 10px;
+    padding: 5px;
+}
+#introduction p{
+    font-size: 16px;
+    text-align: justify;
+    margin: 15px 2px;
+}
+#introduction .btn{
+  font-size: 15px;
+  border: 2px solid white;
+  padding: 10px 24px !important;
+}
+
+/* Features */
+#features {
+    background: #fff; 
+    border-radius: 10px;
+    padding: 45px 15px;
+}
+
+.feature-1 h3 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #003366;
+}
+.feature-1 h2 {
+  font-size: 18px;
+  color: #6C757D;
+  font-weight: 700;
+}
+
+.feature-1 button {
+  background-color: white;
+  font-size: 15px;
+  font-weight: 600;
+  color:#003366;
+  border: 1px solid #004d99;
+}
+
+.feature-1 button:hover {
+  background-color:#004d99;
+  color: white;
+}
+.vertical-divider {
+border-right: 1px solid #ECF0F2;
+top:20%;
+bottom: 20%;
+}
+
+@media only screen and (max-width: 600px) {
+    #features [class*="col-"]{
+        padding: 20px 20px;
+    }
+    .vertical-divider {
+        border-right: 0;
+
+    }
+
+}
+
+/* Exams */
+
+#exams-section {
+    background: #fff; 
+    border-radius: 10px;
+    padding: 25px;
+}
+
+/* Float four columns side by side */
+#exams-section .column {
+  float: left;
+  width: 30%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+#exams-section .row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+#exams-section .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  #exams-section .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+    #exams-section h3 {
+     text-align: center
+  }
+}
+
+/* Style the counter cards */
+#exams-section .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #fff;
+}
+
+/* Subjects */
+
+#subject-section {
+    background: #fff; 
+    border-radius: 10px;
+    padding: 25px;
+}
+
+/* Float four columns side by side */
+#subject-section .column {
+  float: left;
+  width: 30%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+#subject-section .row {
+    margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+#subject-section .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  #subject-section .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+     #exam-heading {
+      display: flex;
+      align-content: center;
+  }
+}
+
+/* Style the counter cards */
+#subject-section .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

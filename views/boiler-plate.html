@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidenav</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/common/css/style.css">
+    <link rel="stylesheet" href="../assets/dashboard/css/dashboard.css">
+
+</head>
+
+<body>
+    <!-- loader container -->
+    <div id="loading-overlay">
+        <div class="spinner">
+
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima accusantium, expedita, suscipit temporibus aspernatur dolorem repellendus pariatur dolore esse modi neque similique quisquam nesciunt at aut eligendi velit cumque hic.Optio cum sit,
+            voluptatem autem facere libero sed in perferendis asperiores, ipsa quod vel reiciendis velit fuga eum! Totam aliquid ex iste laboriosam sit dicta similique in repudiandae illo assumenda.</p>
+    </div>
+
+
+    <div id="topbar" class="df shadow">
+
+        <div id="logo"> </div>
+        <div class="lead my-4 lead-txt">
+            Dashboard 
+        </div>
+        <!-- Hamburger-menu -->
+        <!-- <div class="hamburger" id="menu-toggle">
+            <div class="circle icon">
+                <span class="line top"></span>
+                <span class="line middle"></span>
+                <span class="line bottom"></span>
+            </div>
+        </div> -->
+        <!-- /Hamburger-menu -->
+
+        <div id="right-top" class="df">
+            <div id="search">
+                <input id="sinput" type="text" placeholder="search all tests">
+                <button id="btn2"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="df">
+                <div class="item" id="item-1" onclick="Show_search()"><i class="fas fa-search"></i></div>
+                <div class="item" id="item-2" style="display: none;"><i class="fas fa-times"></i></div>
+                <!-- <div class="item" id="item-4"><i class="fa fa-bell"></i></div> -->
+                <div class="item" id="item-3"><i class="fa fa-user-circle"></i></div>
+            </div>
+        </div>
+    </div>
+    <!-- /topbar -->
+
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper" class="sidebar shadow">
+            <ul class="sidebar-nav">
+                <li class="wactive">
+                    <a href="#">
+                        <span class="sidebar-icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+                        <span class="menu-text">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <span class="sidebar-icon"><i class="fa fa-book" aria-hidden="true"></i></span>
+                        <span class="menu-text">Practice</span>
+
+                    </a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#">
+                                <span class="sidebar-icon1"><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                                <span class="menu-text">Topics</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="sidebar-icon1"><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                                <span class="menu-text">Flash Cards</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <span class="sidebar-icon"><i class="fa fa-edit" aria-hidden="true"></i></span>
+                        <span class="menu-text">Mock Test</span>
+
+                    </a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">
+                                <span class="sidebar-icon1"><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+
+                                <span class="badge badge-pill badge-warning">Live</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="sidebar-icon1"><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                                <span class="menu-text">Free Test</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="sidebar-icon1"><i class="fa fa-arrow-right"
+                                        aria-hidden="true"></i></span>
+                                <span class="menu-text">Upcoming</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="sidebar-icon"><i class="fa fa-gem" aria-hidden="true"></i></span>
+                        <span class="menu-text">Mega Test</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#pageSubmenu2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <span class="sidebar-icon"><i class="fa fa-newspaper" aria-hidden="true"></i></span>
+                        <span class="menu-text">Daily Dose</span>
+                    </a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu2">
+                        <li>
+                            <a href="#">
+                                <span class="sidebar-icon1"><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                                <span class="menu-text">Vocabulary Booster</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="sidebar-icon1"><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                                <span class="menu-text">Current Affairs</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="sidebar-icon1"><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                                <span class="menu-text">The Hindu News</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="sidebar-icon1"><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                                <span class="menu-text">The Hindu Analysis</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="sidebar-icon"><i class="fa fa-book" aria-hidden="true"></i></span>
+                        <span class="menu-text">MCQfy</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="sidebar-icon"><i class="fa fa-user" aria-hidden="true"></i></span>
+                        <span class="menu-text">Login</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="sidebar-icon"><i class="fa fa-edit" aria-hidden="true"></i></span>
+                        <span class="menu-text">Register</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+        <!-- Page Content here -->
+        <div class="page-body">
+        <section>    
+            <div class="jumbotron" id="introduction">
+             <div class="container-fluid">
+                  <h3>Practice Like Toppers</h3>      
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima accusantium, expedita, suscipit temporibus aspernatur dolorem repellendus pariatur dolore esse modi neque similique quisquam nesciunt at aut eligendi velit cumque hic.Optio cum sit,voluptatem autem facere libero sed in perferendis asperiores, ipsa quod vel reiciendis velit fuga eum! Totam aliquid ex iste laboriosam sit dicta similique in repudiandae illo assumenda.</p>
+                 <div class="row">
+                  <div class="col-md-12 text-md-left">
+                  <p><a href="#" class="btn btn-primary btn-lg mr-4"><span class="far fa-hand-point-right mr-3" aria-hidden="true" ></span>Get Started</a> 
+                  <a href="#" class="btn btn-primary btn-lg"><span class="fas fa-download mr-3" aria-hidden="true" ></span>Download App</a></p>
+                  </div>
+                 </div>
+             </div>
+         </div>
+        </section>
+            
+        <section>
+           <div class="jumbotron" id="features">
+             <div class="container-fluid">
+                 <div class="row d-flex flex-row">
+                  <div class="col-sm-1 d-flex flex-column"></div>
+                     
+                  <div class="col-sm-2 d-flex flex-column  vertical-divider">
+                      <div class="feature-1 text-center">
+                        <h3 class="mb-3">267</h3>
+                        <h2 class="mb-5">Exams</h2>
+                <button type="button" class="btn btn-block">Explore</button>
+
+                      </div>
+                  </div>
+                   
+                   <div class="col-sm-2 d-flex flex-column  vertical-divider">
+                       <div class="feature-1 text-center">
+                        <h3 class="mb-3">35,00,000</h3>
+                       <h2 class="mb-5">Questions</h2>
+                <button type="button" class="btn btn-block">Practice</button>       
+                       </div>
+                     </div>
+                     
+                 <div class="col-sm-2 d-flex flex-column  vertical-divider">
+                   <div class="feature-1 text-center">
+                       <h3 class="mb-3">500 +</h3>
+                       <h2 class="mb-5">Mock Tests</h2>
+                <button type="button" class="btn btn-block">Attempt</button>
+
+                    </div>
+                  </div>
+                     
+                 <div class="col-sm-2 d-flex flex-column  vertical-divider">
+                   <div class="feature-1 text-center">
+                       <h3 class="mb-3">20,000</h3>
+                       <h2 class="mb-5">Flash Cards</h2>
+                <button type="button" class="btn btn-block">Revise</button>
+
+                   </div>
+                  </div>
+                     
+                <div class="col-sm-2 d-flex flex-column">
+                    <div class="feature-1 text-center">
+                       <h3 class="mb-3">80,000</h3>
+                       <h2 class="mb-5">Exercise</h2>
+                <button type="button" class="btn btn-block">Solve</button>
+
+                    </div>
+                  </div>
+                  
+                  <div class="col-sm-1 d-flex flex-column"></div>
+                 </div>
+             </div>
+         </div> 
+        </section>  
+            
+        <section>
+           <div class="jumbotron" id="exams-section">
+             <div class="container-fluid">
+              <div class="d-flex justify-content-start p-5" id="exam-heading">   
+               <h3>Exams</h3> 
+               </div>   
+                 <div class="row">
+                  <div class="col-lg-9 align-self-center">
+                    <div class="row">
+                       <div class="column">
+                     <div class="card">
+                        <div class="card-body">
+                         <h5 class="card-title">SSC & Railways</h5>
+                         </div>
+                      <div class="card-footer bg-primary text-center">
+                              <a href="#" class="text-white">Know More</a>
+
+                      </div>
+                       </div>
+                       </div>                  
+                       <div class="column">
+                      <div class="card">
+                    <div class="card-body">
+                       <h5 class="card-title">Banking & Insurance</h5>
+                     </div>
+                    <div class="card-footer bg-primary text-center">
+                              <a href="#" class="text-white">Know More</a>
+
+                      </div>
+                        </div>
+                       </div>    
+                        <div class="column">
+                      <div class="card">
+                       <div class="card-body">
+                         <h5 class="card-title">Defence & Police</h5>
+                         </div>
+                         <div class="card-footer bg-primary text-center">
+                              <a href="#" class="text-white">Know More</a>
+
+                      </div>
+                         </div>
+                        </div>     
+                   </div> 
+                      <br/>
+                         <div class="row">
+                       <div class="column">
+                     <div class="card">
+                        <div class="card-body">
+                         <h5 class="card-title">UPSC & State PSC</h5>
+                         </div>
+                      <div class="card-footer bg-primary text-center">
+                              <a href="#" class="text-white">Know More</a>
+
+                      </div>
+                       </div>
+                       </div>                  
+                       <div class="column">
+                      <div class="card">
+                    <div class="card-body">
+                       <h5 class="card-title">Engineering</h5>
+                     </div>
+                    <div class="card-footer bg-primary text-center">
+                              <a href="#" class="text-white">Know More</a>
+
+                      </div>
+                        </div>
+                       </div>    
+                        <div class="column">
+                      <div class="card">
+                       <div class="card-body">
+                         <h5 class="card-title">Teaching</h5>
+                         </div>
+                         <div class="card-footer bg-primary text-center">
+                              <a href="#" class="text-white">Know More</a>
+
+                      </div>
+                         </div>
+                        </div>     
+                   </div>
+                      
+                  </div>                  
+                  <div class="col-lg-3 text-center p-3">
+                   <img src="../assets/dashboard/img/exams.png" alt="Exams" class="responsive">
+   
+                  </div>
+                 </div>
+             </div>
+         </div>    
+        </section>
+            
+            <section>
+           <div class="jumbotron" id="subject-section">
+             <div class="container-fluid">
+                 <div class="d-flex justify-content-end p-5">
+                 <h3>Subjects</h3>
+                 </div>   
+                 <div class="row">
+                  <div class="col-lg-3 text-center p-3">
+                   <img src="../assets/dashboard/img/subjects.jpg" alt="Subjects" class="responsive">
+   
+                  </div>   
+                  <div class="col-lg-9">
+                  <div class="text-end">
+                    <div class="row">
+                       <div class="column">
+                     <div class="card">
+                        <div class="card-body">
+                         <h5 class="card-title">Mathematics</h5>
+                         </div>
+                      <div class="card-footer bg-primary text-center">
+                              <a href="#" class="text-white">Know More</a>
+
+                      </div>
+                       </div>
+                       </div>                  
+                       <div class="column">
+                      <div class="card">
+                    <div class="card-body">
+                       <h5 class="card-title">Physics</h5>
+                     </div>
+                    <div class="card-footer bg-primary text-center">
+                              <a href="#" class="text-white">Know More</a>
+
+                      </div>
+                        </div>
+                       </div>    
+                        <div class="column">
+                      <div class="card">
+                       <div class="card-body">
+                         <h5 class="card-title">Aptitude & Reasoning</h5>
+                         </div>
+                         <div class="card-footer bg-primary text-center">
+                              <a href="#" class="text-white">Know More</a>
+
+                      </div>
+                         </div>
+                        </div>     
+                   </div> 
+                      <br/>
+                         <div class="row">
+                       <div class="column">
+                     <div class="card">
+                        <div class="card-body">
+                         <h5 class="card-title">Philosophy</h5>
+                         </div>
+                      <div class="card-footer bg-primary text-center">
+                              <a href="#" class="text-white">Know More</a>
+
+                      </div>
+                       </div>
+                       </div>                  
+                       <div class="column">
+                      <div class="card">
+                    <div class="card-body">
+                       <h5 class="card-title">Social science</h5>
+                     </div>
+                    <div class="card-footer bg-primary text-center">
+                              <a href="#" class="text-white">Know More</a>
+
+                      </div>
+                        </div>
+                       </div>    
+                        <div class="column">
+                      <div class="card">
+                       <div class="card-body">
+                         <h5 class="card-title">History</h5>
+                         </div>
+                         <div class="card-footer bg-primary text-center">
+                              <a href="#" class="text-white">Know More</a>
+
+                      </div>
+                         </div>
+                        </div>     
+                   </div>                      
+                      
+                  </div>
+                  </div>    
+                 </div>
+             </div>
+         </div> 
+        </section>
+            
+         <section>
+           <div class="row">
+               <div class="col-lg-12 text-center p-5">
+                   <a href="#" style="font-size: 24px">Know More About Us</a>
+               </div>
+             </div>  
+         </section>
+            
+        </div>
+    </div>
+
+
+    <ul id="bottom-bar" class="df">
+        <li class="active"><a><i class="fa fa-home" aria-hidden="true"></i> <span> Home</span> </a></li>
+        <li><a href="/"><i class="fas fa-book-open"></i> <span> Practice</span> </a></li>
+        <li><a><i class="fas fa-pen"></i> <span> Test</span> </a></li>
+        <li id="more_menu_btn" class=""><a><i class="fas fa-ellipsis-v"> </i> <span> More</span> </a></li>
+    </ul>
+
+    <div id="profile_menu">
+        <li class="pro" id="pro-1"> <a href="">Logout</a></li>
+    </div>
+    <div id="more-menu">
+        <li class="more" id="more-1">
+            <a href="#">Mega Test</a></li>
+        <li class="more" id="more-2">
+            <a href="#">Rapid Test</a></li>
+        <li class="more" id="more-3">
+            <a href="#">Current Affairs</a> </li>
+        <li class="more" id="more-4">
+            <a href="#">Solved doubts/answers</a> </li>
+        <li class="more" id="more-5">
+            <a href="#">Mega Test</a> </li>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="../assets/common/js/script.js"></script>
+</body>
+
+</html>
