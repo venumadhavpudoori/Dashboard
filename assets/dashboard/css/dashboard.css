@@ -1,21 +1,23 @@
 
 .page-body {
-    padding: 10px;   
+    padding: 20px;   
 }
 #introduction {
     background: #fff; 
     border-radius: 10px;
-    padding: 5px;
+    padding: 10px;
 }
 #introduction p{
-    font-size: 16px;
+    font-size: 15px;
     text-align: justify;
     margin: 15px 2px;
 }
-#introduction .btn{
+#introduction button{
   font-size: 15px;
-  border: 2px solid white;
-  padding: 10px 24px !important;
+  font-weight: 700;
+  border: 3px solid #337AB7;
+  padding: 10px 36px !important;
+  margin: 5px 15px;
 }
 
 /* Features */
@@ -26,26 +28,26 @@
 }
 
 .feature-1 h3 {
-  font-size: 15px;
+  font-size: 26px;
   font-weight: 600;
-  color: #003366;
+  color: #337AB7;
 }
 .feature-1 h2 {
   font-size: 18px;
   color: #6C757D;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .feature-1 button {
   background-color: white;
   font-size: 15px;
   font-weight: 600;
-  color:#003366;
-  border: 1px solid #004d99;
+  color:#337AB7;
+  border: 3px solid #337AB7;
 }
 
 .feature-1 button:hover {
-  background-color:#004d99;
+  background-color:#337AB7;
   color: white;
 }
 .vertical-divider {
@@ -70,27 +72,22 @@ bottom: 20%;
 #exams-section {
     background: #fff; 
     border-radius: 10px;
-    padding: 25px;
 }
 
-/* Float four columns side by side */
 #exams-section .column {
   float: left;
-  width: 30%;
+  width: 32%;
   padding: 0 10px;
 }
 
-/* Remove extra left and right margins, due to padding */
-#exams-section .row {margin: 0 -5px;}
+#exams-section .row {margin: 20px -5px;}
 
-/* Clear floats after the columns */
 #exams-section .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Responsive columns */
 @media screen and (max-width: 600px) {
   #exams-section .column {
     width: 100%;
@@ -102,10 +99,9 @@ bottom: 20%;
   }
 }
 
-/* Style the counter cards */
 #exams-section .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
+  padding: 0px;
   text-align: center;
   background-color: #fff;
 }
@@ -118,42 +114,34 @@ bottom: 20%;
     padding: 25px;
 }
 
-/* Float four columns side by side */
 #subject-section .column {
   float: left;
-  width: 30%;
+  width: 32%;
   padding: 0 10px;
 }
 
-/* Remove extra left and right margins, due to padding */
 #subject-section .row {
-    margin: 0 -5px;
+    margin: 20px -5px;
 }
 
-/* Clear floats after the columns */
 #subject-section .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Responsive columns */
 @media screen and (max-width: 600px) {
   #subject-section .column {
     width: 100%;
     display: block;
     margin-bottom: 20px;
   }
-     #exam-heading {
-      display: flex;
-      align-content: center;
-  }
+   
 }
 
-/* Style the counter cards */
 #subject-section .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
+  padding: 0px;
   text-align: center;
   background-color: #fff;
 }
